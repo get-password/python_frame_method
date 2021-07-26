@@ -6,7 +6,7 @@ RELEASE_VERSION = '20210726'
 
 
 APP = {
-    'domain':'https://81.68.132.142:8999',
+    'domain':'vigigo.work:8999',
 }
 
 UPLOAD = {
