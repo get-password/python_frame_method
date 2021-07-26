@@ -9,6 +9,3 @@ def index():
            "if you see this web," \
            "welcome!"
 
-@route_index.route("/test")
-def test():
-    return "这是一个除了首页的页面"
