@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-SERVER_PORT = 8999
-DEBUG = False
-SQLALCHEMY_ECHO = False
+SERVER_PORT = 8889
+DEBUG = True
+SQLALCHEMY_ECHO = True
 RELEASE_VERSION = '20210726'
 
 
 APP = {
-    'domain':'http://vigigo.work',
+    'domain':'https://vigigo.work',
 }
 
 UPLOAD = {
