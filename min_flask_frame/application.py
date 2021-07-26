@@ -9,10 +9,10 @@ class Application( Flask ):
         # 找到Application的父类，然后把类Application的对象转换为类Flask的对象,用父类的init方法实列化
         super(Application,self).__init__(import_name,template_folder = template_folder,root_path=root_path,static_folder=None)
         self.config.from_pyfile( 'config/base_setting.py' )
-        # self.config.from_pyfile('config/local_setting.py')
-        if "ops_config" in os.environ:
-            self.config.from_pyfile('config/%s_setting.py' % os.environ['ops_config'])
-        else:self.config.from_pyfile('config/local_setting.py')
+        self.config.from_pyfile('config/local_setting.py')
+        # if "ops_config" in os.environ:
+        #     self.config.from_pyfile('config/%s_setting.py' % os.environ['ops_config'])
+        # else:self.config.from_pyfile('config/local_setting.py')
 
         db.init_app( self )
 
