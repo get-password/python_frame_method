@@ -8,7 +8,7 @@ from common.libs.UrlManager import UrlManager
 from common.libs.Helper import ops_render
 from common.models.tf_train.train_info import TrainInfo
 @route_tfTrain.route("/train_data")
-def index():
+def train_data():
     return "this tf_train_data clude {" \
            "1.train_info" \
            "2.updata_train_info" \
